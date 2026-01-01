@@ -1,3 +1,8 @@
+/*
+ * File: particle_simulation.c
+ * Description: Program to simulate the horizontal movement and collision of particles
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
