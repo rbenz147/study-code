@@ -6,11 +6,41 @@ int main(void)
 {
     for (int i = 8; i >= 0; i--)
     {
-        for (int j = 0; j < 8; j++)
+        printf("   ");
+
+        for (int k = 0; k < 8; k++)
         {
-            printf("%c%d ", array[j], i);
+            printf("+---");
         }
         printf("\n");
+
+        printf("%-3d", i);
+
+        for (int j = 0; j < 8; j++)
+        {
+            if (j < 7)
+            {
+                if((i+j) % 2 == 0){
+                printf("|###");
+                }
+                else{
+                    printf("|   ");
+                }
+            }
+            else
+            {
+                if((i+j) % 2 == 0){
+                printf("|###|");
+                }
+                else{
+                    printf("|   |");
+                }
+            }
+            
+            
+            
+        }
+        printf("\n");   
         
     }
     
