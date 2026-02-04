@@ -37,6 +37,7 @@ int main(void)
                       }
             default:  printf("Keine gueltige Operation.");
                       printf("\n\n"); 
+                      break;
         }
     } 
 }
