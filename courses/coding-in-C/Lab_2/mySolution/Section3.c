@@ -1,49 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-#define BOARD_SIZE 8
-#define FIELD_WIDTH 3
+char array[9] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'};  
 
-int main() {
-    printf("  ");
-    for (int col = 0; col < BOARD_SIZE; col++) {
-        printf(" %c ", 'A' + col);
-    }
-    printf("\n");
-
-    printf(" +");
-    for (int col = 0; col < BOARD_SIZE; col++) {
-        printf("---+");
-    }
-    printf("\n");
-
-    for (int row = 0; row < BOARD_SIZE; row++) {
-        int rank = BOARD_SIZE - row;
-
-        printf("%d|", rank);
-
-        for (int col = 0; col < BOARD_SIZE; col++) {
-            if ((row + col) % 2 == 0) {
-                printf("   ");
-            } else {
-                printf("###");
-            }
-            printf("|");
-        }
-
-        printf("%d\n", rank);
-
-        printf(" +");
-        for (int col = 0; col < BOARD_SIZE; col++) {
-            printf("---+");
+int main(void)
+{
+    for (int i = 8; i >= 0; i--)
+    {
+        for (int j = 0; j < 8; j++)
+        {
+            printf("%c%d ", array[j], i);
         }
         printf("\n");
+        
     }
-
-    printf("  ");
-    for (int col = 0; col < BOARD_SIZE; col++) {
-        printf(" %c ", 'A' + col);
-    }
-    printf("\n");
-
-    return 0;
+    
+    
 }
