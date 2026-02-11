@@ -19,8 +19,8 @@ int main(int argc, char **argv){
 
     int *ptrarray = &array[0];
 
-    int temp[array_size];
-    for (int i = 0; i < array_size; i++)
+    int temp[array_size];                       //temp deklarieren
+    for (int i = 0; i < array_size; i++)        //temp array initialisieren
     {
         temp[i] = 0;
     }
@@ -84,7 +84,7 @@ int main(int argc, char **argv){
 
                     }
                     else{
-                        temp[i] = array[i];
+                        temp[i] = array[i];     //Wenn Partikel am Rand dann soll es am Rand bleiben
                     }
                 }
             }  
