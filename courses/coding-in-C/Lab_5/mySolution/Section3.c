@@ -10,7 +10,7 @@ int array[array_size];
 
 int main(int argc, char **argv){
 
-    srand((unsigned)time(NULL));
+    srand((unsigned)time(NULL));                //Random seed fuer 
 
     //Partikel setzen
     array[2] = 1;    
@@ -47,7 +47,8 @@ int main(int argc, char **argv){
                 
                 int r = rand() % 2;     
 
-                if(r == 0){         //Entscheiden mit random Zahl ob +1 oder -1 Position
+                if(r == 0)              //Entscheiden mit random Zahl ob +1 oder -1 Position
+                {         
 
                     if ((i-1) >= 0)     //Check ob i im array liegt
                     {
@@ -58,19 +59,22 @@ int main(int argc, char **argv){
                             printf("\nCollision on Index %d", i-1);
                         }
 
-                        else{                       // Wenn bei -1 kein Partikel ist dann i-1 = 1
+                        else                // Wenn bei -1 kein Partikel ist dann i-1 = 1
+                        {                       
                             *(ptrtemp + i - 1) = 1;
                         }
 
                     }
-                    else{
+                    else
+                    {
                         *(ptrtemp + i) = *(ptrarray + i);     //Wenn Partikel am Rand dann soll es am Rand bleiben
                     }
                     
                 }
-                else{
+                else
+                {
 
-                    if ( (i + 1) < array_size)  //Check ob i im array liegt
+                    if ((i + 1) < array_size)  //Check ob i im array liegt
                     {
 
                         if (*(ptrtemp + i + 1) == 1)     //Wenn bei +1 bereits Partikel ist dann Kollision -> i+1 = 0
@@ -79,12 +83,14 @@ int main(int argc, char **argv){
                             printf("\nCollision on Index %d", i+1);
                         }
 
-                        else{                   // Wenn bei +1 kein Partikel ist dann i+1 = 1      
+                        else
+                        {                               // Wenn bei +1 kein Partikel ist dann i+1 = 1      
                             *(ptrtemp + i + 1) = 1;
                         }
 
                     }
-                    else{
+                    else
+                    {
                         *(ptrtemp + i) = *(ptrarray + i);     //Wenn Partikel am Rand dann soll es am Rand bleiben
                     }
                 }
