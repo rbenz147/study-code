@@ -48,6 +48,9 @@ int main(void)
     fclose(f1);
     fclose(f2);
 
+    print_intervals(&sensor1, "Sensor1");
+    print_intervals(&sensor2, "Sensor2");
+
     float overlapped[SAMPLES] = {0};
     for (int i = 0; i < sensor1.n && i < sensor2.n; i++)
     {
@@ -63,9 +66,7 @@ int main(void)
             overlapped[i] = 0.0f;
         }
     }
-    print_intervals_from_signal(signal1, times, n, "Sensor1");
-    print_intervals_from_signal(signal2, times, n, "Sensor2");
-    print_intervals_from_signal(overlap, times, n, "Fusion");
+    
     
 
     return 0;
