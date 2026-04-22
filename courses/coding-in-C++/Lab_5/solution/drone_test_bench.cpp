@@ -86,6 +86,9 @@ int main()
 
     // Section III
     // Task 9
+    std::cout << "Sum: " << computeSum(recordedData2) << '\n';
+    std::cout << "Max: " << computeMax(recordedData2) << '\n';
+    std::cout << "Average: " << computeAverage(recordedData2) << '\n';
 
     return 0;
 }

@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <cstddef>
+#include <numeric> // std::accumulate
 
 template <typename T>
 void swap(T &firstValue, T &secondValue)
@@ -120,4 +121,22 @@ void printVector(const std::vector<T> &data)
     std::cout << "]" << '\n';
 }
 
+template <typename T>
+T computeSum(const std::vector<T> &data)
+{
+    return std::accumulate(data.begin(), data.end(), T());
+}
+
+template <typename T>
+T computeMax(const std::vector<T> &data)
+{
+    return *std::max_element(data.begin(), data.end());
+}
+
+template <typename T>
+double computeAverage(const std::vector<T> &data)
+{
+    T sum = computeSum(data);
+    return static_cast<double>(sum) / data.size();
+}
 #endif

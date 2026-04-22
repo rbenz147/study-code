@@ -257,23 +257,16 @@ Implement generic functions that can analyze a dataset stored in a `std::vector`
 
 Your analyzer must be able to determine:
 
-- the sum of all values
+- the sum of all values (if you use std::accumulate, use T() as initial value)
 - the largest value
 - the average value
-- the number of occurrences of a specific value
-- whether a specific value exists in the dataset
 
 #### Requirements
 
 - Use STL algorithms wherever appropriate
-- Do not write separate versions for `int` and `double`
 - Test your functions with at least:
   - one `std::vector<int>`
   - one `std::vector<double>`
-
-#### Context
-
-The drone test bench should use the same analysis logic for different numeric measurement types.
 
 ---
 
