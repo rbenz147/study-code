@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Seite-1" id="lW7TzVnivTxYPYYJ44qR">
+    <mxGraphModel dx="849" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SeQUXxawXmO42_Lls42T-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Course" vertex="1">
+          <mxGeometry height="210" width="180" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-16" parent="SeQUXxawXmO42_Lls42T-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-id:int" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-4" parent="SeQUXxawXmO42_Lls42T-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-description:string" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-2" parent="SeQUXxawXmO42_Lls42T-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-title:string" vertex="1">
+          <mxGeometry height="30" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-13" edge="1" parent="SeQUXxawXmO42_Lls42T-1" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;" target="SeQUXxawXmO42_Lls42T-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="50" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-18" edge="1" parent="SeQUXxawXmO42_Lls42T-1" style="endArrow=none;html=1;rounded=0;entryX=1.001;entryY=0.038;entryDx=0;entryDy=0;entryPerimeter=0;" target="SeQUXxawXmO42_Lls42T-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint y="150" as="sourcePoint" />
+            <mxPoint x="50" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-11" parent="SeQUXxawXmO42_Lls42T-1" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillStyle=auto;gradientColor=none;" value="-course_lessons[]:Lessons" vertex="1">
+          <mxGeometry height="30" width="180" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-5" parent="SeQUXxawXmO42_Lls42T-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+add_material()" vertex="1">
+          <mxGeometry height="30" width="180" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-6" parent="SeQUXxawXmO42_Lls42T-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+remove&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;_material()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="180" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-7" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Lessons" vertex="1">
+          <mxGeometry height="150" width="190" x="500" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-19" edge="1" parent="SeQUXxawXmO42_Lls42T-7" style="endArrow=none;html=1;rounded=0;entryX=0.989;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;" target="SeQUXxawXmO42_Lls42T-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint y="90" as="sourcePoint" />
+            <mxPoint x="50" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-15" parent="SeQUXxawXmO42_Lls42T-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-id:int" vertex="1">
+          <mxGeometry height="30" width="190" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-8" parent="SeQUXxawXmO42_Lls42T-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-content:string" vertex="1">
+          <mxGeometry height="30" width="190" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-10" parent="SeQUXxawXmO42_Lls42T-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+add_content(contnet:string)" vertex="1">
+          <mxGeometry height="30" width="190" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-14" parent="SeQUXxawXmO42_Lls42T-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+remove_content(contnet:string)" vertex="1">
+          <mxGeometry height="30" width="190" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-20" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;u&gt;User&lt;/u&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="70" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-21" parent="SeQUXxawXmO42_Lls42T-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-id:int" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-22" parent="SeQUXxawXmO42_Lls42T-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-name:string" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-23" parent="SeQUXxawXmO42_Lls42T-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-plattforms[]:Plattform" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-24" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Plattform" vertex="1">
+          <mxGeometry height="90" width="140" x="520" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-25" parent="SeQUXxawXmO42_Lls42T-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-id:int" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-26" parent="SeQUXxawXmO42_Lls42T-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-name:string" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-28" edge="1" parent="1" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SeQUXxawXmO42_Lls42T-8" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="230" y="160" as="sourcePoint" />
+            <mxPoint x="390" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-33" connectable="0" parent="SeQUXxawXmO42_Lls42T-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="aufsammeln" vertex="1">
+          <mxGeometry relative="1" x="0.0108" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-29" edge="1" parent="1" source="SeQUXxawXmO42_Lls42T-6" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.508;exitY=1.052;exitDx=0;exitDy=0;exitPerimeter=0;" target="SeQUXxawXmO42_Lls42T-20" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="230" y="180" as="sourcePoint" />
+            <mxPoint x="390" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-38" connectable="0" parent="SeQUXxawXmO42_Lls42T-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="besteht aus" vertex="1">
+          <mxGeometry relative="1" x="-0.193" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-37" edge="1" parent="1" source="SeQUXxawXmO42_Lls42T-22" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.994;exitY=-0.024;exitDx=0;exitDy=0;exitPerimeter=0;" target="SeQUXxawXmO42_Lls42T-24" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="280" y="410" as="sourcePoint" />
+            <mxPoint x="440" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-39" connectable="0" parent="SeQUXxawXmO42_Lls42T-37" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ist auf&amp;nbsp;" vertex="1">
+          <mxGeometry relative="1" x="0.0649" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="*" vertex="1">
+          <mxGeometry height="30" width="60" x="220" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...*" vertex="1">
+          <mxGeometry height="30" width="60" x="440" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...*" vertex="1">
+          <mxGeometry height="30" width="60" x="140" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...100" vertex="1">
+          <mxGeometry height="30" width="60" x="140" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="*" vertex="1">
+          <mxGeometry height="30" width="60" x="200" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="SeQUXxawXmO42_Lls42T-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...*" vertex="1">
+          <mxGeometry height="30" width="60" x="470" y="430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
