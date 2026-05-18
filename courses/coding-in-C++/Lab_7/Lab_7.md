@@ -47,7 +47,7 @@ The adhacency matrix at element ```[i,j]``` is zero or non-zero depending on if 
 
 ## Task Description
 
-Create an adjacency matrix for the graph.
+Create an adjacency matrix for the graph. Interpret the characters A, B, C as 0, 1, 2.
 
 - Use boolean values for each element of the matrix and a fixed sized 2d array.
 - The matrix should be contained in a class called ```AdjacencyMatrix```.
@@ -75,3 +75,26 @@ In this section, we want to improve the existing class by getting rid of the fix
 
 Answer as comment in the code:
 * What is (still) the downside of this implementation of the matrix?
+
+## 🟡 Section IV: Adjacency List Representation
+
+An adjacency list is a way to represent a graph by storing, for each vertex (node), a list of all the vertices connected to it.
+
+An adjacency list stores each vertex together with a list of all vertices directly connected to it. Internally, this is usually implemented as an array/vector where each index represents a vertex and contains a linked list or vector of its neighbors.
+
+![Graph example with list](adjacencyList.svg)
+
+## Task Description
+
+Based on the image in this section IV, create a class called ```AdjacencyList```.
+
+Interpret the characters A, B, C as 0, 1, 2.
+
+The class should contain:
+- a vector container representing the adjacency list
+- a constructor to initialize the list
+- a method to add new vertices
+- a method to add edges between vertices
+- a method to print the adjacency list to the console
+
+Create an object in main representing the graph shown in the image above in section IV.
